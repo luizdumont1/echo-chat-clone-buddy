@@ -228,7 +228,7 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="bg-emerald-700 border-none text-white">
               <CardContent className="pt-6">
-                <p className="mb-4">"O Botzilla transformou completamente nossa abordagem de vendas. Aumentamos nossa taxa de conversão em 40%!"</p>
+                <p className="mb-4">"O meubot.online transformou completamente nossa abordagem de vendas. Aumentamos nossa taxa de conversão em 40%!"</p>
                 <div className="flex items-center">
                   <img 
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" 
@@ -389,7 +389,7 @@ const LandingPage = () => {
             Pronto para transformar seu atendimento?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Comece a usar o Botzilla hoje mesmo e veja a diferença em suas conversões
+            Comece a usar o meubot.online hoje mesmo e veja a diferença em suas conversões
           </p>
           <Button className="bg-white text-emerald-600 hover:bg-emerald-50 rounded-full px-8 py-6 text-lg font-medium">
             Comece Grátis Agora
@@ -402,7 +402,7 @@ const LandingPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-white text-lg mb-4">Botzilla</h3>
+              <h3 className="font-bold text-white text-lg mb-4">meubot.online</h3>
               <p className="mb-4">Automação inteligente para seu WhatsApp Business</p>
               <div className="flex space-x-4">
                 <a href="#" className="hover:text-white">
@@ -453,7 +453,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="border-t border-emerald-700 mt-12 pt-8 text-center">
-            <p>&copy; {new Date().getFullYear()} Botzilla. Todos os direitos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} meubot.online. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
