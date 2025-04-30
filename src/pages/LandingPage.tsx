@@ -2,13 +2,17 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Check } from "lucide-react";
+import { Check, MessageSquare, Users, WhatsApp } from "lucide-react";
+import Header from '@/components/Header';
 
 const LandingPage = () => {
   return (
     <div className="bg-emerald-500 min-h-screen text-white">
+      {/* Header */}
+      <Header />
+      
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
+      <section className="container mx-auto px-4 pt-32 pb-16 md:py-32">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Seu WhatsApp Lead Capture Totalmente Automatizado
@@ -44,20 +48,88 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="bg-emerald-50 text-emerald-900 py-16">
+      {/* Why Choose Our Bot Section */}
+      <section id="features" className="py-16 bg-white text-emerald-900">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+            Por Que Escolher Nosso Bot
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+            <div className="order-2 md:order-1">
+              <div className="grid gap-6">
+                <div className="bg-emerald-50 p-6 rounded-xl shadow-sm">
+                  <div className="flex items-start">
+                    <div className="bg-emerald-100 p-3 rounded-full mr-4">
+                      <MessageSquare className="text-emerald-600 h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl mb-2">Resposta Imediata</h3>
+                      <p className="text-emerald-800">Não perca nenhuma oportunidade de venda com atendimento automatizado 24/7</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-emerald-50 p-6 rounded-xl shadow-sm">
+                  <div className="flex items-start">
+                    <div className="bg-emerald-100 p-3 rounded-full mr-4">
+                      <WhatsApp className="text-emerald-600 h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl mb-2">Integração Nativa</h3>
+                      <p className="text-emerald-800">Conecte-se diretamente ao WhatsApp sem apps ou instalações complexas</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-emerald-50 p-6 rounded-xl shadow-sm">
+                  <div className="flex items-start">
+                    <div className="bg-emerald-100 p-3 rounded-full mr-4">
+                      <Users className="text-emerald-600 h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl mb-2">Personalização Avançada</h3>
+                      <p className="text-emerald-800">Adapte a experiência do cliente com base no comportamento e preferências</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="order-1 md:order-2">
+              <img 
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" 
+                alt="Equipe usando WhatsApp para atendimento" 
+                className="rounded-lg shadow-xl w-full object-cover"
+                style={{ height: '400px' }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section id="how-it-works" className="bg-emerald-50 text-emerald-900 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Como Funciona
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="bg-white p-6 rounded-xl shadow-sm relative">
               <div className="bg-emerald-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                 <span className="text-emerald-600 font-bold">1</span>
               </div>
               <h3 className="font-bold text-xl mb-3">Captura Inteligente</h3>
               <p className="text-emerald-700">Visitantes do site são convertidos em leads automaticamente</p>
+              
+              <div className="mt-6 pb-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
+                  alt="Captura de leads" 
+                  className="rounded-lg w-full h-48 object-cover"
+                />
+              </div>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
@@ -66,6 +138,14 @@ const LandingPage = () => {
               </div>
               <h3 className="font-bold text-xl mb-3">Chatbot Inteligente</h3>
               <p className="text-emerald-700">Interações automáticas que impulsionam vendas</p>
+              
+              <div className="mt-6 pb-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" 
+                  alt="Chatbot em ação" 
+                  className="rounded-lg w-full h-48 object-cover"
+                />
+              </div>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
@@ -74,15 +154,74 @@ const LandingPage = () => {
               </div>
               <h3 className="font-bold text-xl mb-3">Análise de Resultados</h3>
               <p className="text-emerald-700">Acompanhe métricas e otimize seu desempenho</p>
+              
+              <div className="mt-6 pb-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
+                  alt="Análise de dados" 
+                  className="rounded-lg w-full h-48 object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies Section */}
+      <section className="py-16 bg-emerald-600">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Casos de Sucesso
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+              <div className="flex items-start">
+                <div className="mr-4">
+                  <img 
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" 
+                    alt="Cliente satisfeito" 
+                    className="w-20 h-20 rounded-full object-cover border-2 border-white"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-bold text-xl mb-2">Empresa Tech Solutions</h3>
+                  <p className="mb-3">Aumento de 73% nas conversões de leads com nosso chatbot inteligente</p>
+                  <div className="flex">
+                    <WhatsApp className="h-5 w-5 mr-2" />
+                    <span>2,500+ conversas mensais</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+              <div className="flex items-start">
+                <div className="mr-4">
+                  <img 
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" 
+                    alt="Cliente satisfeito" 
+                    className="w-20 h-20 rounded-full object-cover border-2 border-white"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-bold text-xl mb-2">Comércio Digital Ltda</h3>
+                  <p className="mb-3">Redução de 45% no tempo de resposta e aumento de 35% na satisfação do cliente</p>
+                  <div className="flex">
+                    <WhatsApp className="h-5 w-5 mr-2" />
+                    <span>1,800+ conversas mensais</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-emerald-600">
+      <section id="testimonials" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-emerald-900">
             O cliente sempre tem razão
           </h2>
           
@@ -91,7 +230,11 @@ const LandingPage = () => {
               <CardContent className="pt-6">
                 <p className="mb-4">"O Botzilla transformou completamente nossa abordagem de vendas. Aumentamos nossa taxa de conversão em 40%!"</p>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-emerald-500 mr-3"></div>
+                  <img 
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" 
+                    alt="Maria Silva" 
+                    className="w-10 h-10 rounded-full object-cover mr-3"
+                  />
                   <div>
                     <p className="font-bold">Maria Silva</p>
                     <p className="text-sm text-emerald-200">Marketing Manager, TechCorp</p>
@@ -104,7 +247,11 @@ const LandingPage = () => {
               <CardContent className="pt-6">
                 <p className="mb-4">"Implementação fácil e resultados imediatos. Nossos clientes adoram a experiência personalizada."</p>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-emerald-500 mr-3"></div>
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" 
+                    alt="João Costa" 
+                    className="w-10 h-10 rounded-full object-cover mr-3"
+                  />
                   <div>
                     <p className="font-bold">João Costa</p>
                     <p className="text-sm text-emerald-200">CEO, Empresa Digital</p>
@@ -117,7 +264,7 @@ const LandingPage = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 bg-white text-emerald-900">
+      <section id="pricing" className="py-16 bg-emerald-50 text-emerald-900">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             Planos e Preços
@@ -281,8 +428,8 @@ const LandingPage = () => {
             <div>
               <h3 className="font-bold text-white text-lg mb-4">Produto</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-white">Recursos</a></li>
-                <li><a href="#" className="hover:text-white">Preços</a></li>
+                <li><a href="#features" className="hover:text-white">Recursos</a></li>
+                <li><a href="#pricing" className="hover:text-white">Preços</a></li>
                 <li><a href="#" className="hover:text-white">FAQ</a></li>
                 <li><a href="#" className="hover:text-white">Integrações</a></li>
               </ul>
