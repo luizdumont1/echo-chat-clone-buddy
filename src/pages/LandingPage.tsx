@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Check, MessageSquare, Users, WhatsApp } from "lucide-react";
+import { Check, MessageSquare, Users, Phone } from "lucide-react";
 import Header from '@/components/Header';
 
 const LandingPage = () => {
@@ -73,7 +73,7 @@ const LandingPage = () => {
                 <div className="bg-emerald-50 p-6 rounded-xl shadow-sm">
                   <div className="flex items-start">
                     <div className="bg-emerald-100 p-3 rounded-full mr-4">
-                      <WhatsApp className="text-emerald-600 h-6 w-6" />
+                      <Phone className="text-emerald-600 h-6 w-6" />
                     </div>
                     <div>
                       <h3 className="font-bold text-xl mb-2">Integração Nativa</h3>
@@ -188,7 +188,7 @@ const LandingPage = () => {
                   <h3 className="font-bold text-xl mb-2">Empresa Tech Solutions</h3>
                   <p className="mb-3">Aumento de 73% nas conversões de leads com nosso chatbot inteligente</p>
                   <div className="flex">
-                    <WhatsApp className="h-5 w-5 mr-2" />
+                    <Phone className="h-5 w-5 mr-2" />
                     <span>2,500+ conversas mensais</span>
                   </div>
                 </div>
@@ -208,7 +208,7 @@ const LandingPage = () => {
                   <h3 className="font-bold text-xl mb-2">Comércio Digital Ltda</h3>
                   <p className="mb-3">Redução de 45% no tempo de resposta e aumento de 35% na satisfação do cliente</p>
                   <div className="flex">
-                    <WhatsApp className="h-5 w-5 mr-2" />
+                    <Phone className="h-5 w-5 mr-2" />
                     <span>1,800+ conversas mensais</span>
                   </div>
                 </div>
