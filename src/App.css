@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,38 +6,43 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* WhatsApp specific colors */
+.whatsapp-green {
+  color: #25D366;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.whatsapp-bg-green {
+  background-color: #25D366;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.whatsapp-dark-green {
+  color: #075E54;
 }
 
-.card {
-  padding: 2em;
+.whatsapp-bg-dark-green {
+  background-color: #075E54;
 }
 
-.read-the-docs {
-  color: #888;
+.whatsapp-teal {
+  color: #128C7E;
+}
+
+.whatsapp-bg-teal {
+  background-color: #128C7E;
+}
+
+.whatsapp-light-green {
+  color: #DCF8C6;
+}
+
+.whatsapp-bg-light-green {
+  background-color: #DCF8C6;
+}
+
+.whatsapp-blue {
+  color: #34B7F1;
+}
+
+.whatsapp-bg-blue {
+  background-color: #34B7F1;
 }

@@ -26,17 +26,26 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				emerald: {
-					50: '#ecfdf5',
-					100: '#d1fae5',
-					200: '#a7f3d0',
-					300: '#6ee7b7',
-					400: '#34d399',
-					500: '#10b981',
-					600: '#059669',
-					700: '#047857',
-					800: '#065f46',
-					900: '#064e3b',
-					950: '#022c22',
+					50: '#f0fdf5',
+					100: '#dcfce8',
+					200: '#bbf7d1',
+					300: '#86efac',
+					400: '#4ade80',
+					500: '#25D366', // WhatsApp primary green
+					600: '#16a34a',
+					700: '#15803d',
+					800: '#166534',
+					900: '#14532d',
+					950: '#052e16',
+				},
+				// Adicionando cores específicas do WhatsApp
+				whatsapp: {
+					green: '#25D366',     // WhatsApp primary green
+					lightGreen: '#DCF8C6', // WhatsApp chat bubble background
+					darkGreen: '#075E54',  // WhatsApp dark header green
+					teal: '#128C7E',       // WhatsApp secondary green
+					blue: '#34B7F1',       // WhatsApp blue checkmarks
+					lightGray: '#f2f2f2',  // WhatsApp light background
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
